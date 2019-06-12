@@ -15,15 +15,16 @@ public class Student {
     private Integer id;
     private String username;
     private String password;
-    private String Sno;
-    @Temporal(TemporalType.DATE)
-    private Date birthday;
+    private String sno;
+    private String sex;
 
     public Integer getId() {
         return id;
     }
 
-    public void setId(Integer id) { this.id = id; }
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -37,32 +38,23 @@ public class Student {
         return password;
     }
 
-    public void setPassword(String password) { this.password = password; }
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     public String getSno() {
-        return Sno;
+        return sno;
     }
 
     public void setSno(String sno) {
-        Sno = sno;
+        this.sno = sno;
     }
 
-    public Date getBirthday() {
-        return birthday;
+    public String getSex() {
+        return sex;
     }
 
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "id=" + id +
-                ", username='" + username + '\'' +
-                ", password='" + password + '\'' +
-                ", Sno='" + Sno + '\'' +
-                ", birthday=" + birthday +
-                '}';
+    public void setSex(String sex) {
+        this.sex = sex;
     }
 }
